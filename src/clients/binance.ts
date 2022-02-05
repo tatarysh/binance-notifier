@@ -6,6 +6,9 @@ const binance = Binance({
   apiSecret: BINANCE_SECRET,
 })
 
-setInterval(() => binance.ping(), 5 * 60 * 1000) // ping api every 5 minutes
+// ping api every 5 minutes
+setInterval(() => {
+  binance.ping().catch(() => process.exit(1))
+}, 5 * 60 * 1000)
 
 export default binance

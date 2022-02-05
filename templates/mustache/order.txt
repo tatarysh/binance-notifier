@@ -1,0 +1,6 @@
+Symbol: {{ symbol }}
+Status: {{ orderStatus }}
+Side: {{ side }}
+
+Quantity: {{ quantity }}
+Price: {{ price }}

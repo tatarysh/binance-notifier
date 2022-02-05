@@ -208,7 +208,7 @@ bignumber.js@^9.0.0:
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.2.tgz#71c6c6bed38de64e24a65ebe16cfcf23ae693673"
   integrity sha512-GAcQvbpsM0pUb0zw1EI0KhQEZ+lRwR5fYaAp3vPOYuP7aDvGy6cVN6XHLauvF8SOga2y0dcLcjt3iQDTSEliyw==
 
-binance-api-node@latest:
+binance-api-node@^0.11.31:
   version "0.11.31"
   resolved "https://registry.yarnpkg.com/binance-api-node/-/binance-api-node-0.11.31.tgz#d70a972767303b24e8973da3eb3e567d2254a219"
   integrity sha512-JKklkHMHnJZ3N9T3db8c/oRXjCcHaoTLWrFSulO/3gQa/+TvWtkwSY3FlubuNaqthBc7e8jyOjS56mMhNjOS2w==
@@ -769,6 +769,11 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+mustache@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.2.0.tgz#e5892324d60a12ec9c2a73359edca52972bf6f64"
+  integrity sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==
 
 natural-compare@^1.4.0:
   version "1.4.0"

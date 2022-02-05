@@ -1,9 +1,13 @@
 import binance from './clients/binance'
-import telegram from './clients/telegram'
-import { TELEGRAM_CHAT_ID } from './config'
+import Notifier from './notifier'
+import { EXECUTION_REPORT_STATUSES } from './config'
 
-binance.ws.user((message) => {
-  if (message.eventType === 'executionReport' && ['FILLED', 'PARTIALLY_FILLED'].includes(message.orderStatus)) {
-    telegram.telegram.sendMessage(TELEGRAM_CHAT_ID, JSON.stringify(message)).catch(() => {})
-  }
-})
+const notifier = new Notifier()
+
+binance.ws
+  .user((message) => {
+    if (message.eventType === 'executionReport' && EXECUTION_REPORT_STATUSES.includes(message.orderStatus)) {
+      notifier.notify('execution_report', message)
+    }
+  })
+  .catch(() => process.exit(1))
