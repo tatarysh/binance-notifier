@@ -1,7 +1,5 @@
 # Binance Notifier
 
----
-
 The application was created to inform about placed orders from Binance on Telegram.
 
 The application works without any problems on Orange Pi Zero.
@@ -9,8 +7,6 @@ The application works without any problems on Orange Pi Zero.
 I recommend using `pm2` to monitor the application.
 
 If you have an idea, suggestion, or just want to report a bug. Just create an issue on GitHub.
-
----
 
 ## Installation
 
@@ -31,15 +27,15 @@ You must define the following environment variables in your `.env` file:
 ```shell
 cp .env.example .env
 nano .env
-````
+```
 
 If you set all the variables, you can start the applications.
 
 ```shell
 yarn start
 ```
--------
-### TODO:
+
+## TODO:
 
 - tests
 - logs
