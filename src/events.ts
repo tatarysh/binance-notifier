@@ -11,7 +11,7 @@ type NotifierEvents = {
 
 const events: NotifierEvents = {
   execution_report: {
-    telegram: fs.readFileSync(path.resolve(__dirname, '../templates/mustache/order.txt')).toString(),
+    telegram: fs.readFileSync(path.resolve(__dirname, '../templates/telegram/order.txt')).toString(),
   },
 }
 

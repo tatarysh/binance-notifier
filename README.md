@@ -1,6 +1,22 @@
-# Installation
+# Binance Notifier
+
+---
+
+The application was created to inform about placed orders from Binance on Telegram.
+
+The application works without any problems on Orange Pi Zero.
+
+I recommend using `pm2` to monitor the application.
+
+If you have an idea, suggestion, or just want to report a bug. Just create an issue on GitHub.
+
+---
+
+## Installation
 
 ```shell
+git clone https://github.com/tatarysh/binance-notifier.git
+cd binance-notifier
 yarn install
 yarn build
 ```
@@ -23,7 +39,9 @@ If you set all the variables, you can start the applications.
 yarn start
 ```
 -------
-## TODO:
+### TODO:
 
-- multiple channels (slack, discord, email)
-- template for messages
+- tests
+- logs
+- multiple channels
+- price alerts (?)

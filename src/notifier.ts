@@ -7,7 +7,7 @@ import { ExecutionReport } from 'binance-api-node'
 export default class Notifier {
   notify(event: 'execution_report', payload: ExecutionReport)
 
-  notify(event: EVENTS, payload: any) {
+  notify(event: EVENTS, payload: object) {
     const channels = events[event] || {}
 
     for (const [channel, template] of Object.entries(channels)) {
