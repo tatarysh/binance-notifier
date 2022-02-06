@@ -1,12 +1,12 @@
 # Binance Notifier
 
-The application was created to inform about placed orders from Binance on Telegram.
+The application was created to notify on a [Telegram](https://telegram.org/) about orders that have been filled on the [Binance](https://accounts.binance.com/en/register?ref=S90GBP2D) exchange.
 
-The application works without any problems on Orange Pi Zero.
+![Telegram screenshot](./static/telegram.jpg)
 
-I recommend using `pm2` to monitor the application.
+I recommend using [pm2](https://pm2.keymetrics.io/) to monitor the application.
 
-If you have an idea, suggestion, or just want to report a bug. Just create an issue on GitHub.
+If you have an idea, suggestion or just want to report a bug? Just create an issue on GitHub.
 
 ## Installation
 
@@ -34,6 +34,10 @@ If you set all the variables, you can start the applications.
 ```shell
 yarn start
 ```
+
+## Environments variable
+
+- `EXECUTION_REPORT_STATUSES` - defines for which order statuses the notification is to be sent (default: `FILLED,PARTIALLY_FILLED`)
 
 ## TODO:
 
